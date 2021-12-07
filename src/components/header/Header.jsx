@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import { ContactLinks } from "./ContactLinks";
 import useMediaQuery from "../../hooks/useMediaQuery";
+import { MainNavbar } from "./MainNavbar";
 
 export const Header = (props) => {
   const match = useMediaQuery("(max-width:920px)");
@@ -19,6 +20,7 @@ export const Header = (props) => {
           <ContactLinks />
         </Container>
       </Navbar>
+      <MainNavbar />
     </header>
   );
 };
