@@ -15,7 +15,7 @@ export const MainNavbar = (props) => {
           <Nav.Link as={Link} to="/">
             Link
           </Nav.Link>
-          <NavDropdown title="Deparments List" id="departments">
+          <NavDropdown title="Deparments" id="departments">
             <NavDropdown.Item as={Link} to="/cs">
               Computer Science
             </NavDropdown.Item>
