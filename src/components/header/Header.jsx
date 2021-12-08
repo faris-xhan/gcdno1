@@ -1,4 +1,4 @@
-import { List as ListIcon, Search as SearchIcon } from "react-bootstrap-icons";
+import { Search as SearchIcon } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 import { ContactLinks } from "./ContactLinks";
 import { MainNavbar } from "./MainNavbar";
@@ -24,11 +24,6 @@ export const Header = (props) => {
     <header>
       <Navbar bg="light">
         <Container fluid>
-          {match && (
-            <Button variant="outline-secondary">
-              <ListIcon />
-            </Button>
-          )}
           <Navbar.Brand as={Link} to="/" className="px-3 flex-grow-1">
             {title}
           </Navbar.Brand>
@@ -42,7 +37,7 @@ export const Header = (props) => {
           </Button>
         </Container>
       </Navbar>
-      {!match && <MainNavbar />}
+      <MainNavbar />
       <MainSearchbar show={showSearchbar} handleClose={handleCloseSearcbar} />
     </header>
   );
