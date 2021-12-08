@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import { Banner } from "../components/Banner";
+import { HomeCarousel } from "../components/HomeCarousel";
 
 const content =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloremque amet totam aliquam quae nostrum nam rerum voluptatum! Natus quis nostrum tempore voluptatibus commodi praesentium distinctio quia ullam iusto molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, dicta.";
@@ -13,6 +14,9 @@ const Home = (props) => {
           title="Message from Principal"
           message={content}
         />
+      </Container>
+      <Container className="p-1">
+        <HomeCarousel />
       </Container>
     </Container>
   );
