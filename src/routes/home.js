@@ -7,12 +7,13 @@ const content =
 const Home = (props) => {
   return (
     <Container fluid className="p-0">
-      <Banner
-        img="/holder.svg"
-        title="Message from Principal"
-        message={content}
-      />
-      <h1>Home</h1>
+      <Container className="p-1">
+        <Banner
+          img="/holder.svg"
+          title="Message from Principal"
+          message={content}
+        />
+      </Container>
     </Container>
   );
 };
